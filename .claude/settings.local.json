@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npm create vite@latest . -- --template react 2>&1)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion-react\" && npm install && npm install react-router-dom 2>&1)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && cp -r \"../bluemotion-react/node_modules\" . && cp \"../bluemotion-react/package.json\" . && cp \"../bluemotion-react/package-lock.json\" . && cp \"../bluemotion-react/vite.config.js\" . && cp \"../bluemotion-react/eslint.config.js\" . 2>&1)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && rm -rf css js components fmta bluemotion floating special-maternity education shop news index.html README.md 2>&1)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && mkdir -p public src/styles src/components/Header src/components/Footer src/components/SubNav src/components/Breadcrumb src/components/HeroSection src/components/Lightbox src/components/Icon src/layouts src/pages/Home src/pages/Fmta src/pages/Bluemotion src/pages/Floating src/pages/SpecialMaternity src/pages/Education src/pages/Shop src/pages/News 2>&1)",
+      "Bash(test:*)",
+      "Bash(head:*)",
+      "Bash(ls:*)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npx vite build 2>&1)",
+      "Bash(echo EXIT: $?:*)",
+      "Bash(cd \"C:/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npm run build 2>&1)",
+      "Bash(true:*)",
+      "Bash(tail:*)",
+      "Bash(cd \"C:\\\\Users\\\\alstj\\\\OneDrive\\\\문서\\\\바탕 화면\\\\bluemotion\" && npm run build 2>&1)",
+      "Bash(cd \"/c/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npx vite build 2>&1)"
+    ]
+  }
+}
