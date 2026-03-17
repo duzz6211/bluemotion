@@ -34,12 +34,13 @@ export default function HomePage() {
               </div>
               <div className="comparison-body">
                 <p className="comparison-desc">
-                  <strong>움직임 교육 전문 협회</strong>로서 교육 철학과 커리큘럼을 개발하고, <strong>민간자격증 발급</strong>을 담당합니다.
+                  <strong>기능적움직임트레이닝 교육 전문 협회</strong>로서 교육 철학과 커리큘럼을 개발
                 </p>
                 <ul className="comparison-list">
-                  <li><span className="feature-icon"><Icon name="clipboard" /></span><span>민간자격증 발급 기관</span></li>
-                  <li><span className="feature-icon"><Icon name="book" /></span><span>교육 커리큘럼 개발</span></li>
-                  <li><span className="feature-icon"><Icon name="checkCircle" /></span><span>지도자 인증 및 관리</span></li>
+                  <li><span className="feature-icon"><Icon name="award" /></span><span>문화체육관광부 인증 자격 발급 교육기관</span></li>
+                  <li><span className="feature-icon"><Icon name="graduationCap" /></span><span>기능성필라테스/기능성움직임 지도자과정</span></li>
+                  <li><span className="feature-icon"><Icon name="fileText" /></span><span>교육 커리큘럼 개발 및 강의</span></li>
+                  <li><span className="feature-icon"><Icon name="userCheck" /></span><span>강사 양성 및 지도자 인증</span></li>
                 </ul>
                 <Link to="/fmta" className="btn btn-primary">협회 소개 보기</Link>
               </div>
@@ -53,12 +54,13 @@ export default function HomePage() {
               </div>
               <div className="comparison-body">
                 <p className="comparison-desc">
-                  <strong>실물 필라테스 센터</strong>로서 FMTA 교육 철학을 현장에서 구현하며, <strong>레슨 및 교육 실습</strong>이 이루어지는 공간입니다.
+                  <strong>FMTA 교육 철학을 구현하는</strong> 현장으로, <strong>레슨과 교육</strong>이 이루어지는 공간
                 </p>
                 <ul className="comparison-list">
-                  <li><span className="feature-icon"><Icon name="building" /></span><span>울진 소재 오프라인 센터</span></li>
-                  <li><span className="feature-icon"><Icon name="graduationCap" /></span><span>개인/그룹 필라테스 레슨</span></li>
-                  <li><span className="feature-icon"><Icon name="target" /></span><span>교육 실습 및 워크샵 진행</span></li>
+                  <li><span className="feature-icon"><Icon name="building" /></span><span>울진 소재 대형 필라테스 센터</span></li>
+                  <li><span className="feature-icon"><Icon name="users" /></span><span>그룹 ∙ 개인 ∙ 임산부 ∙ 키즈 ∙ 시니어 ∙ 재활</span></li>
+                  <li><span className="feature-icon"><Icon name="graduationCap" /></span><span>필라테스 지도자과정 교육 기관</span></li>
+                  <li><span className="feature-icon"><Icon name="handshake" /></span><span>학교 ∙ 보건소 ∙ 공기업 출강 및 연계 프로그램</span></li>
                 </ul>
                 <Link to="/bluemotion" className="btn btn-primary">센터 둘러보기</Link>
               </div>
@@ -160,7 +162,11 @@ export default function HomePage() {
             <div className="activity-info">
               <h3 className="activity-title">플로팅 온 더 블루</h3>
               <p className="activity-desc">울진의 아름다운 자연속에서 부력을 활용한 특별한 움직임을 경험하며 몸과 마음의 균형을 찾아갑니다.</p>
-              <p className="activity-note">울진 해변에서 5월~9월 시즌 운영 · 초보자 환영</p>
+              <ul className="activity-list">
+                <li><Icon name="checkCircle" /> 고래와 함께 힐링 타임</li>
+                <li><Icon name="checkCircle" /> 부력 활용 플로팅 필라테스</li>
+                <li><Icon name="checkCircle" /> 전문강사 지도 프로그램</li>
+              </ul>
               <Link to="/floating" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
           </div>
@@ -168,9 +174,13 @@ export default function HomePage() {
           {/* Row 2: 왼쪽 설명 / 오른쪽 사진 두 개 */}
           <div className="activity-row">
             <div className="activity-info">
-              <h3 className="activity-title">수중 필라테스</h3>
-              <p className="activity-desc">수중 환경에서 진행되는 필라테스로, 물의 저항을 활용하여 근력 강화와 유연성 향상을 동시에 달성합니다.</p>
-              <p className="activity-note">실내 수영장 연중 운영 · 전문 지도자 상주</p>
+              <h3 className="activity-title">팀빌딩 ∙ 워크샵</h3>
+              <p className="activity-desc">오늘은 회사를 벗어나 팀원과 함께 건강도 챙기고 추억도 쌓아봅니다.</p>
+              <ul className="activity-list">
+                <li><Icon name="checkCircle" /> 10명 내외 인원 가능</li>
+                <li><Icon name="checkCircle" /> 약 90분간 진행</li>
+                <li><Icon name="checkCircle" /> 체형별 스트레칭 교육</li>
+              </ul>
               <Link to="/floating" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
@@ -186,20 +196,28 @@ export default function HomePage() {
               <div className="activity-photo placeholder-image">[활동 사진 6]</div>
             </div>
             <div className="activity-info">
-              <h3 className="activity-title">스페셜 임산부</h3>
-              <p className="activity-desc">임신 기간에 맞춤화된 안전한 운동 프로그램입니다. 산전·산후 전문 지도자가 1:1 또는 소그룹으로 진행합니다.</p>
-              <p className="activity-note">개인 / 그룹 / 부부 레슨 · 지역 기관 연계 운영</p>
-              <Link to="/special-maternity" className="btn btn-primary btn-sm">자세히 보기</Link>
+              <h3 className="activity-title">비치 필라테스</h3>
+              <p className="activity-desc">가까이 있기에 소중함을 몰랐던 해변에서 파도소리 가득한 필라테스 레슨입니다.</p>
+              <ul className="activity-list">
+                <li><Icon name="checkCircle" /> 소도구 활용 야외 필라테스</li>
+                <li><Icon name="checkCircle" /> 남녀노소 누구나 참여 가능</li>
+                <li><Icon name="checkCircle" /> 봄 ∙ 여름 ∙ 가을 시즌</li>
+              </ul>
+              <Link to="/floating/activity" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
           </div>
 
           {/* Row 4: 왼쪽 설명 / 오른쪽 사진 두 개 */}
           <div className="activity-row">
             <div className="activity-info">
-              <h3 className="activity-title">비치 무브먼트</h3>
-              <p className="activity-desc">해변에서 진행되는 움직임 프로그램으로, 자연환경 속에서 전신 운동과 힐링을 동시에 경험할 수 있습니다.</p>
-              <p className="activity-note">여름 시즌 한정 · 단체 예약 가능</p>
-              <Link to="/floating/activity" className="btn btn-primary btn-sm">자세히 보기</Link>
+              <h3 className="activity-title">학교 연계 프로그램</h3>
+              <p className="activity-desc">아이들이 가장 많은 시간을 보내고 있는 학교 인솔하에 센터를 방문하여 집중레슨을 받습니다.</p>
+              <ul className="activity-list">
+                <li><Icon name="checkCircle" /> 학기 중 주기적 방문 레슨</li>
+                <li><Icon name="checkCircle" /> 방학 중 단기적 방문 레슨</li>
+                <li><Icon name="checkCircle" /> 자세 ∙ 키 성장 관련 출강</li>
+              </ul>
+              <Link to="/special-maternity" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
               <div className="activity-photo placeholder-image">[활동 사진 7]</div>

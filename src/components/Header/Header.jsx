@@ -23,7 +23,7 @@ const navItems = [
     ],
   },
   {
-    label: '플로팅온더블루',
+    label: '주요레슨',
     to: '/floating',
     dropdown: [
       { to: '/floating', label: '프로그램 소개' },
@@ -33,7 +33,7 @@ const navItems = [
     ],
   },
   {
-    label: '스페셜임산부',
+    label: '특별활동',
     to: '/special-maternity',
     dropdown: [
       { type: 'header', label: '레슨 소개' },
@@ -49,7 +49,7 @@ const navItems = [
     ],
   },
   {
-    label: '강사과정',
+    label: '교육과정',
     to: '/education',
     dropdown: [
       { type: 'header', label: '필라테스지도자' },
