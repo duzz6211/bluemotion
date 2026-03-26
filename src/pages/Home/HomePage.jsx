@@ -79,7 +79,7 @@ export default function HomePage() {
           <div className="lesson-pair">
             {/* 그룹 레슨 */}
             <div className="lesson-card">
-              <div className="lesson-card-image placeholder-image">[그룹레슨 사진 - 리포머, 여]</div>
+              <img className="lesson-card-image" src="/images/home/group-lesson.webp" alt="그룹레슨 - 리포머" />
               <div className="lesson-card-body">
                 <h3 className="lesson-card-title">그룹 레슨</h3>
                 <p className="lesson-card-desc">나를 위한 소중한 시간, 소규모 인원으로 진행되어 양질의 레슨이 가능합니다.</p>
@@ -93,7 +93,7 @@ export default function HomePage() {
             </div>
             {/* 개인 레슨 */}
             <div className="lesson-card">
-              <div className="lesson-card-image placeholder-image">[개인레슨 사진]</div>
+              <img className="lesson-card-image" src="/images/home/private-lesson.webp" alt="개인레슨" />
               <div className="lesson-card-body">
                 <h3 className="lesson-card-title">개인 레슨</h3>
                 <p className="lesson-card-desc">조금씩 찾아가는 바른 자세, 체형분석과 움직임 테스트로 시작합니다.</p>
@@ -115,7 +115,7 @@ export default function HomePage() {
           <div className="lesson-pair">
             {/* 왼쪽 */}
             <div className="lesson-card">
-              <div className="lesson-card-image placeholder-image">[프로그램 사진]</div>
+              <img className="lesson-card-image" src="/images/home/maternity.webp" alt="스페셜 임산부" />
               <div className="lesson-card-body">
                 <h3 className="lesson-card-title">스페셜 임산부</h3>
                 <p className="lesson-card-desc">임산부운동처방사와 함께 주 수에 맞춰 진행되는 안전한 그룹 레슨입니다.</p>
@@ -129,7 +129,7 @@ export default function HomePage() {
             </div>
             {/* 오른쪽 */}
             <div className="lesson-card">
-              <div className="lesson-card-image placeholder-image">[프로그램 사진]</div>
+              <img className="lesson-card-image" src="/images/home/kids-growth.webp" alt="키즈 성장" />
               <div className="lesson-card-body">
                 <h3 className="lesson-card-title">키즈 ∙ 성장</h3>
                 <p className="lesson-card-desc">버른 자세에서 시작되는 집중력과 신체적 자신감은 시기에 맞는 성장을 도와줍니다.</p>
@@ -156,8 +156,8 @@ export default function HomePage() {
           {/* Row 1: 왼쪽 사진 두 개 / 오른쪽 설명 */}
           <div className="activity-row">
             <div className="activity-photos">
-              <div className="activity-photo placeholder-image">[활동 사진 1]</div>
-              <div className="activity-photo placeholder-image">[활동 사진 2]</div>
+              <img className="activity-photo" src="/images/home/floating-1.webp" alt="플로팅 온 더 블루 1" />
+              <img className="activity-photo" src="/images/home/floating-2.webp" alt="플로팅 온 더 블루 2" />
             </div>
             <div className="activity-info">
               <h3 className="activity-title">플로팅 온 더 블루</h3>
@@ -184,16 +184,16 @@ export default function HomePage() {
               <Link to="/floating" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
-              <div className="activity-photo placeholder-image">[활동 사진 3]</div>
-              <div className="activity-photo placeholder-image">[활동 사진 4]</div>
+              <img className="activity-photo" src="/images/home/teambuilding-1.webp" alt="팀빌딩 워크샵 1" />
+              <img className="activity-photo" src="/images/home/teambuilding-2.webp" alt="팀빌딩 워크샵 2" />
             </div>
           </div>
 
           {/* Row 3: 왼쪽 사진 두 개 / 오른쪽 설명 */}
           <div className="activity-row">
             <div className="activity-photos">
-              <div className="activity-photo placeholder-image">[활동 사진 5]</div>
-              <div className="activity-photo placeholder-image">[활동 사진 6]</div>
+              <img className="activity-photo" src="/images/home/beach-pilates-1.webp" alt="비치 필라테스 1" />
+              <img className="activity-photo" src="/images/home/beach-pilates-2.webp" alt="비치 필라테스 2" />
             </div>
             <div className="activity-info">
               <h3 className="activity-title">비치 필라테스</h3>
@@ -220,8 +220,8 @@ export default function HomePage() {
               <Link to="/special-maternity" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
-              <div className="activity-photo placeholder-image">[활동 사진 7]</div>
-              <div className="activity-photo placeholder-image">[활동 사진 8]</div>
+              <img className="activity-photo" src="/images/home/school-program-1.webp" alt="학교 연계 프로그램 1" />
+              <img className="activity-photo" src="/images/home/school-program-2.webp" alt="학교 연계 프로그램 2" />
             </div>
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function HomePage() {
           </div>
           <div className="instructor-courses">
             <div className="instructor-course-card">
-              <div className="instructor-course-image placeholder-image">[필라테스 지도자 과정 사진]</div>
+              <img className="instructor-course-image" src="/images/home/course-pilates.webp" alt="필라테스 지도자 과정" />
               <div className="instructor-course-body">
                 <h4 className="instructor-course-title">필라테스 지도자 과정</h4>
                 <p className="instructor-course-desc">기능성필라테스 지도자 과정</p>
@@ -244,7 +244,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="instructor-course-card">
-              <div className="instructor-course-image placeholder-image">[글로벌 필라테스]</div>
+              <img className="instructor-course-image" src="/images/home/course-global.webp" alt="글로벌 필라테스" />
               <div className="instructor-course-body">
                 <h4 className="instructor-course-title">글로벌 필라테스</h4>
                 <p className="instructor-course-desc">결혼 이민 여성 취업 지원</p>
@@ -252,7 +252,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="instructor-course-card">
-              <div className="instructor-course-image placeholder-image">[플로팅 필라테스]</div>
+              <img className="instructor-course-image" src="/images/home/course-floating.webp" alt="플로팅 필라테스" />
               <div className="instructor-course-body">
                 <h4 className="instructor-course-title">플로팅 필라테스</h4>
                 <p className="instructor-course-desc">플로팅 필라테스 지도자 과정</p>
@@ -306,7 +306,7 @@ export default function HomePage() {
             <p className="section-subtitle">울진에 위치한 블루모션 실물 센터를 소개합니다</p>
           </div>
           <div className="center-info-wrapper">
-            <div className="center-info-image placeholder-image" style={{ minHeight: '350px', borderRadius: '12px' }}>[센터 외관/내부 이미지]</div>
+            <img className="center-info-image" src="/images/home/center.webp" alt="블루모션트레이닝 센터" style={{ minHeight: '350px', borderRadius: '12px' }} />
             <div className="center-info-details">
               <div className="info-item">
                 <span className="info-icon"><Icon name="mapPin" /></span>
@@ -342,7 +342,7 @@ export default function HomePage() {
           </div>
           <div className="grid-3">
             <article className="card">
-              <div className="card-image placeholder-image">[뉴스 이미지]</div>
+              <img className="card-image" src="/images/home/news-1.webp" alt="지도자 과정 모집" />
               <div className="card-body">
                 <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.15</span>
                 <h4 className="card-title">2024년 상반기 지도자 과정 모집 안내</h4>
@@ -351,7 +351,7 @@ export default function HomePage() {
               </div>
             </article>
             <article className="card">
-              <div className="card-image placeholder-image">[뉴스 이미지]</div>
+              <img className="card-image" src="/images/home/news-2.webp" alt="플로팅온더블루 시즌 프로그램" />
               <div className="card-body">
                 <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.10</span>
                 <h4 className="card-title">플로팅온더블루 시즌 프로그램 오픈</h4>
@@ -360,7 +360,7 @@ export default function HomePage() {
               </div>
             </article>
             <article className="card">
-              <div className="card-image placeholder-image">[뉴스 이미지]</div>
+              <img className="card-image" src="/images/home/news-3.webp" alt="울진군 건강증진센터 협약" />
               <div className="card-body">
                 <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.05</span>
                 <h4 className="card-title">울진군 건강증진센터 협약 체결</h4>
