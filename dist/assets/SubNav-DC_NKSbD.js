@@ -1,1 +1,0 @@
-import{u as l,j as s,L as t}from"./index-5u0NTm3I.js";function r({items:n}){const o=l();return!n||n.length===0?null:s.jsx("nav",{className:"sub-nav",children:s.jsx("div",{className:"container",children:n.map(a=>s.jsx(t,{to:a.to,className:`sub-nav-link${o.pathname===a.to?" active":""}`,children:a.label},a.to))})})}export{r as S};
