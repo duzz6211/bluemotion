@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function BluemotionLocation() {
+export default function FloatingEducation() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="오시는길"
-        subtitle="블루모션트레이닝 센터 위치 안내"
+        title="교육과정"
+        subtitle="플로팅온더블루 교육과정 안내"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
-          { label: '블루모션트레이닝센터', to: '/bluemotion' },
-          { label: '오시는길' },
+          { label: '플로팅온더블루', to: '/floating' },
+          { label: '교육과정' },
         ]}
       />
 
@@ -30,11 +30,11 @@ export default function BluemotionLocation() {
 
             <aside className="sidebar">
               <nav className="sidebar-menu">
-                <h3 className="sidebar-title">블루모션트레이닝센터</h3>
-                <Link to="/bluemotion" className={`sidebar-link${location.pathname === '/bluemotion' ? ' active' : ''}`}>시설소개</Link>
-                <Link to="/bluemotion/program" className={`sidebar-link${location.pathname === '/bluemotion/program' ? ' active' : ''}`}>프로그램</Link>
-                <Link to="/bluemotion/location" className={`sidebar-link${location.pathname === '/bluemotion/location' ? ' active' : ''}`}>오시는길</Link>
-                <Link to="/bluemotion/vision" className={`sidebar-link${location.pathname === '/bluemotion/vision' ? ' active' : ''}`}>비전</Link>
+                <h3 className="sidebar-title">플로팅온더블루</h3>
+                <Link to="/floating" className={`sidebar-link${location.pathname === '/floating' ? ' active' : ''}`}>활동소개</Link>
+                <Link to="/floating/process" className={`sidebar-link${location.pathname === '/floating/process' ? ' active' : ''}`}>진행과정</Link>
+                <Link to="/floating/education" className={`sidebar-link${location.pathname === '/floating/education' ? ' active' : ''}`}>교육과정</Link>
+                <Link to="/floating/vision" className={`sidebar-link${location.pathname === '/floating/vision' ? ' active' : ''}`}>비전</Link>
               </nav>
               <div className="info-box mt-3">
                 <h4 className="info-box-title">문의</h4>

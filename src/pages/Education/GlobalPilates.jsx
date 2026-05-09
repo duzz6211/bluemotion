@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function OnlineCourse() {
+export default function GlobalPilates() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="온라인 교육과정"
-        subtitle="시간과 장소 제약 없는 비대면 교육"
+        title="글로벌필라테스"
+        subtitle="글로벌필라테스 지도자 과정"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
           { label: '교육과정', to: '/education' },
-          { label: '온라인 교육과정' },
+          { label: '글로벌필라테스' },
         ]}
       />
 
@@ -38,7 +38,7 @@ export default function OnlineCourse() {
                 <Link to="/education/online-course" className={`sidebar-link${location.pathname === '/education/online-course' ? ' active' : ''}`}>온라인 교육과정</Link>
               </nav>
               <div className="info-box mt-3">
-                <h4 className="info-box-title">교육 문의</h4>
+                <h4 className="info-box-title">문의</h4>
                 <dl>
                   <dt><Icon name="phone" /></dt><dd>054-XXX-XXXX</dd>
                   <dt><Icon name="mail" /></dt><dd>info@bluemotion.co.kr</dd>

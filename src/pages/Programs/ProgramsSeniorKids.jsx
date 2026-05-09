@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function BluemotionLocation() {
+export default function ProgramsSeniorKids() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="오시는길"
-        subtitle="블루모션트레이닝 센터 위치 안내"
+        title="시니어 · 키즈"
+        subtitle="시니어와 어린이를 위한 프로그램"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
-          { label: '블루모션트레이닝센터', to: '/bluemotion' },
-          { label: '오시는길' },
+          { label: '프로그램', to: '/programs/group-private' },
+          { label: '시니어 · 키즈' },
         ]}
       />
 
@@ -30,11 +30,11 @@ export default function BluemotionLocation() {
 
             <aside className="sidebar">
               <nav className="sidebar-menu">
-                <h3 className="sidebar-title">블루모션트레이닝센터</h3>
-                <Link to="/bluemotion" className={`sidebar-link${location.pathname === '/bluemotion' ? ' active' : ''}`}>시설소개</Link>
-                <Link to="/bluemotion/program" className={`sidebar-link${location.pathname === '/bluemotion/program' ? ' active' : ''}`}>프로그램</Link>
-                <Link to="/bluemotion/location" className={`sidebar-link${location.pathname === '/bluemotion/location' ? ' active' : ''}`}>오시는길</Link>
-                <Link to="/bluemotion/vision" className={`sidebar-link${location.pathname === '/bluemotion/vision' ? ' active' : ''}`}>비전</Link>
+                <h3 className="sidebar-title">프로그램</h3>
+                <Link to="/programs/group-private" className={`sidebar-link${location.pathname === '/programs/group-private' ? ' active' : ''}`}>그룹 · 개인</Link>
+                <Link to="/programs/maternity" className={`sidebar-link${location.pathname === '/programs/maternity' ? ' active' : ''}`}>스페셜임사부</Link>
+                <Link to="/programs/senior-kids" className={`sidebar-link${location.pathname === '/programs/senior-kids' ? ' active' : ''}`}>시니어 · 키즈</Link>
+                <Link to="/programs/rehab-athlete" className={`sidebar-link${location.pathname === '/programs/rehab-athlete' ? ' active' : ''}`}>재활 · 선수</Link>
               </nav>
               <div className="info-box mt-3">
                 <h4 className="info-box-title">문의</h4>

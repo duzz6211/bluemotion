@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function BluemotionLocation() {
+export default function SpecialIamBlue() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="오시는길"
-        subtitle="블루모션트레이닝 센터 위치 안내"
+        title="나는 블루"
+        subtitle="블루모션 커뮤니티"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
-          { label: '블루모션트레이닝센터', to: '/bluemotion' },
-          { label: '오시는길' },
+          { label: '특별활동', to: '/special/team-building' },
+          { label: '나는 블루' },
         ]}
       />
 
@@ -30,11 +30,11 @@ export default function BluemotionLocation() {
 
             <aside className="sidebar">
               <nav className="sidebar-menu">
-                <h3 className="sidebar-title">블루모션트레이닝센터</h3>
-                <Link to="/bluemotion" className={`sidebar-link${location.pathname === '/bluemotion' ? ' active' : ''}`}>시설소개</Link>
-                <Link to="/bluemotion/program" className={`sidebar-link${location.pathname === '/bluemotion/program' ? ' active' : ''}`}>프로그램</Link>
-                <Link to="/bluemotion/location" className={`sidebar-link${location.pathname === '/bluemotion/location' ? ' active' : ''}`}>오시는길</Link>
-                <Link to="/bluemotion/vision" className={`sidebar-link${location.pathname === '/bluemotion/vision' ? ' active' : ''}`}>비전</Link>
+                <h3 className="sidebar-title">특별활동</h3>
+                <Link to="/special/team-building" className={`sidebar-link${location.pathname === '/special/team-building' ? ' active' : ''}`}>팀빌딩 · 워크샵</Link>
+                <Link to="/special/beach-pilates" className={`sidebar-link${location.pathname === '/special/beach-pilates' ? ' active' : ''}`}>비치필라테스</Link>
+                <Link to="/special/sports-club" className={`sidebar-link${location.pathname === '/special/sports-club' ? ' active' : ''}`}>스포츠클럽</Link>
+                <Link to="/special/i-am-blue" className={`sidebar-link${location.pathname === '/special/i-am-blue' ? ' active' : ''}`}>나는 블루</Link>
               </nav>
               <div className="info-box mt-3">
                 <h4 className="info-box-title">문의</h4>

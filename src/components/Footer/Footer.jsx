@@ -25,17 +25,17 @@ export default function Footer() {
             <ul className="footer-links">
               <li><Link to="/fmta">협회소개</Link></li>
               <li><Link to="/fmta/greeting">인사말</Link></li>
-              <li><Link to="/fmta/history">연혁</Link></li>
-              <li><Link to="/fmta/info">정보</Link></li>
+              <li><Link to="/fmta/history">협회연혁</Link></li>
+              <li><Link to="/fmta/partners">제휴업체</Link></li>
             </ul>
           </div>
 
           {/* Center Links */}
           <div>
-            <h4 className="footer-title">블루모션트레이닝</h4>
+            <h4 className="footer-title">블루모션트레이닝센터</h4>
             <ul className="footer-links">
               <li><Link to="/bluemotion">시설소개</Link></li>
-              <li><Link to="/bluemotion/lesson">레슨안내</Link></li>
+              <li><Link to="/bluemotion/program">프로그램</Link></li>
               <li><Link to="/bluemotion/location">오시는길</Link></li>
               <li><Link to="/bluemotion/vision">비전</Link></li>
             </ul>
@@ -46,9 +46,9 @@ export default function Footer() {
             <h4 className="footer-title">프로그램</h4>
             <ul className="footer-links">
               <li><Link to="/floating">플로팅온더블루</Link></li>
-              <li><Link to="/special-maternity">스페셜임산부</Link></li>
-              <li><Link to="/education">강사과정</Link></li>
-              <li><Link to="/shop">이용안내</Link></li>
+              <li><Link to="/programs/group-private">프로그램</Link></li>
+              <li><Link to="/special/team-building">특별활동</Link></li>
+              <li><Link to="/education">교육과정</Link></li>
             </ul>
           </div>
         </div>

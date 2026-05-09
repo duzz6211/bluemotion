@@ -9,46 +9,42 @@ const HomePage = lazy(() => import('./pages/Home/HomePage'))
 const FmtaIndex = lazy(() => import('./pages/Fmta/FmtaIndex'))
 const FmtaGreeting = lazy(() => import('./pages/Fmta/FmtaGreeting'))
 const FmtaHistory = lazy(() => import('./pages/Fmta/FmtaHistory'))
-const FmtaInfo = lazy(() => import('./pages/Fmta/FmtaInfo'))
+const FmtaPartners = lazy(() => import('./pages/Fmta/FmtaPartners'))
 
 /* ── Bluemotion ────────────────────────────────────── */
 const BluemotionIndex = lazy(() => import('./pages/Bluemotion/BluemotionIndex'))
-const BluemotionLesson = lazy(() => import('./pages/Bluemotion/BluemotionLesson'))
+const BluemotionProgram = lazy(() => import('./pages/Bluemotion/BluemotionProgram'))
 const BluemotionLocation = lazy(() => import('./pages/Bluemotion/BluemotionLocation'))
 const BluemotionVision = lazy(() => import('./pages/Bluemotion/BluemotionVision'))
 
 /* ── Floating ──────────────────────────────────────── */
 const FloatingIndex = lazy(() => import('./pages/Floating/FloatingIndex'))
-const FloatingActivity = lazy(() => import('./pages/Floating/FloatingActivity'))
-const FloatingPartners = lazy(() => import('./pages/Floating/FloatingPartners'))
+const FloatingProcess = lazy(() => import('./pages/Floating/FloatingProcess'))
+const FloatingEducation = lazy(() => import('./pages/Floating/FloatingEducation'))
 const FloatingVision = lazy(() => import('./pages/Floating/FloatingVision'))
 
-/* ── Special Maternity ─────────────────────────────── */
-const MaternityIndex = lazy(() => import('./pages/SpecialMaternity/MaternityIndex'))
-const MaternityGroupLesson = lazy(() => import('./pages/SpecialMaternity/MaternityGroupLesson'))
-const MaternityPrivateLesson = lazy(() => import('./pages/SpecialMaternity/MaternityPrivateLesson'))
-const MaternityCoupleLesson = lazy(() => import('./pages/SpecialMaternity/MaternityCoupleLesson'))
-const MaternityPartnerOrgs = lazy(() => import('./pages/SpecialMaternity/MaternityPartnerOrgs'))
-const MaternityVolunteer = lazy(() => import('./pages/SpecialMaternity/MaternityVolunteer'))
-const MaternityVision = lazy(() => import('./pages/SpecialMaternity/MaternityVision'))
+/* ── Programs ──────────────────────────────────────── */
+const ProgramsGroupPrivate = lazy(() => import('./pages/Programs/ProgramsGroupPrivate'))
+const ProgramsMaternity = lazy(() => import('./pages/Programs/ProgramsMaternity'))
+const ProgramsSeniorKids = lazy(() => import('./pages/Programs/ProgramsSeniorKids'))
+const ProgramsRehabAthlete = lazy(() => import('./pages/Programs/ProgramsRehabAthlete'))
+
+/* ── Special ───────────────────────────────────────── */
+const SpecialTeamBuilding = lazy(() => import('./pages/Special/SpecialTeamBuilding'))
+const SpecialBeachPilates = lazy(() => import('./pages/Special/SpecialBeachPilates'))
+const SpecialSportsClub = lazy(() => import('./pages/Special/SpecialSportsClub'))
+const SpecialIamBlue = lazy(() => import('./pages/Special/SpecialIamBlue'))
 
 /* ── Education ─────────────────────────────────────── */
 const EducationIndex = lazy(() => import('./pages/Education/EducationIndex'))
-const FunctionalAnatomy = lazy(() => import('./pages/Education/FunctionalAnatomy'))
 const FunctionalPilates = lazy(() => import('./pages/Education/FunctionalPilates'))
-const MarriagePregnancy = lazy(() => import('./pages/Education/MarriagePregnancy'))
+const GlobalPilates = lazy(() => import('./pages/Education/GlobalPilates'))
+const FloatingPilates = lazy(() => import('./pages/Education/FloatingPilates'))
 const OnlineCourse = lazy(() => import('./pages/Education/OnlineCourse'))
-const FloatingExpert = lazy(() => import('./pages/Education/FloatingExpert'))
-
-/* ── Shop ──────────────────────────────────────────── */
-const ShopIndex = lazy(() => import('./pages/Shop/ShopIndex'))
-const ShopPrograms = lazy(() => import('./pages/Shop/ShopPrograms'))
-const ShopLessons = lazy(() => import('./pages/Shop/ShopLessons'))
-const ShopInstructorCourses = lazy(() => import('./pages/Shop/ShopInstructorCourses'))
-const ShopFloating = lazy(() => import('./pages/Shop/ShopFloating'))
 
 /* ── News ──────────────────────────────────────────── */
 const NewsIndex = lazy(() => import('./pages/News/NewsIndex'))
+const NewsNotice = lazy(() => import('./pages/News/NewsNotice'))
 const NewsSns = lazy(() => import('./pages/News/NewsSns'))
 const NewsContact = lazy(() => import('./pages/News/NewsContact'))
 
@@ -63,46 +59,42 @@ export default function App() {
           <Route path="/fmta" element={<FmtaIndex />} />
           <Route path="/fmta/greeting" element={<FmtaGreeting />} />
           <Route path="/fmta/history" element={<FmtaHistory />} />
-          <Route path="/fmta/info" element={<FmtaInfo />} />
+          <Route path="/fmta/partners" element={<FmtaPartners />} />
 
           {/* Bluemotion */}
           <Route path="/bluemotion" element={<BluemotionIndex />} />
-          <Route path="/bluemotion/lesson" element={<BluemotionLesson />} />
+          <Route path="/bluemotion/program" element={<BluemotionProgram />} />
           <Route path="/bluemotion/location" element={<BluemotionLocation />} />
           <Route path="/bluemotion/vision" element={<BluemotionVision />} />
 
           {/* Floating */}
           <Route path="/floating" element={<FloatingIndex />} />
-          <Route path="/floating/activity" element={<FloatingActivity />} />
-          <Route path="/floating/partners" element={<FloatingPartners />} />
+          <Route path="/floating/process" element={<FloatingProcess />} />
+          <Route path="/floating/education" element={<FloatingEducation />} />
           <Route path="/floating/vision" element={<FloatingVision />} />
 
-          {/* Special Maternity */}
-          <Route path="/special-maternity" element={<MaternityIndex />} />
-          <Route path="/special-maternity/group" element={<MaternityGroupLesson />} />
-          <Route path="/special-maternity/private" element={<MaternityPrivateLesson />} />
-          <Route path="/special-maternity/couple" element={<MaternityCoupleLesson />} />
-          <Route path="/special-maternity/partners" element={<MaternityPartnerOrgs />} />
-          <Route path="/special-maternity/volunteer" element={<MaternityVolunteer />} />
-          <Route path="/special-maternity/vision" element={<MaternityVision />} />
+          {/* Programs */}
+          <Route path="/programs/group-private" element={<ProgramsGroupPrivate />} />
+          <Route path="/programs/maternity" element={<ProgramsMaternity />} />
+          <Route path="/programs/senior-kids" element={<ProgramsSeniorKids />} />
+          <Route path="/programs/rehab-athlete" element={<ProgramsRehabAthlete />} />
+
+          {/* Special */}
+          <Route path="/special/team-building" element={<SpecialTeamBuilding />} />
+          <Route path="/special/beach-pilates" element={<SpecialBeachPilates />} />
+          <Route path="/special/sports-club" element={<SpecialSportsClub />} />
+          <Route path="/special/i-am-blue" element={<SpecialIamBlue />} />
 
           {/* Education */}
           <Route path="/education" element={<EducationIndex />} />
-          <Route path="/education/functional-anatomy" element={<FunctionalAnatomy />} />
           <Route path="/education/functional-pilates" element={<FunctionalPilates />} />
-          <Route path="/education/marriage-pregnancy" element={<MarriagePregnancy />} />
+          <Route path="/education/global-pilates" element={<GlobalPilates />} />
+          <Route path="/education/floating-pilates" element={<FloatingPilates />} />
           <Route path="/education/online-course" element={<OnlineCourse />} />
-          <Route path="/education/floating-expert" element={<FloatingExpert />} />
-
-          {/* Shop */}
-          <Route path="/shop" element={<ShopIndex />} />
-          <Route path="/shop/programs" element={<ShopPrograms />} />
-          <Route path="/shop/lessons" element={<ShopLessons />} />
-          <Route path="/shop/instructor-courses" element={<ShopInstructorCourses />} />
-          <Route path="/shop/floating" element={<ShopFloating />} />
 
           {/* News */}
           <Route path="/news" element={<NewsIndex />} />
+          <Route path="/news/notice" element={<NewsNotice />} />
           <Route path="/news/sns" element={<NewsSns />} />
           <Route path="/news/contact" element={<NewsContact />} />
         </Route>

@@ -16,7 +16,15 @@
       "Bash(true:*)",
       "Bash(tail:*)",
       "Bash(cd \"C:\\\\Users\\\\alstj\\\\OneDrive\\\\문서\\\\바탕 화면\\\\bluemotion\" && npm run build 2>&1)",
-      "Bash(cd \"/c/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npx vite build 2>&1)"
+      "Bash(cd \"/c/Users/alstj/OneDrive/문서/바탕 화면/bluemotion\" && npx vite build 2>&1)",
+      "Bash(npx vite *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Read(//tmp/**)",
+      "Bash(npm run *)",
+      "Bash(git checkout *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m ' *)",
+      "Bash(echo \"EXIT: $?\")"
     ]
   }
 }

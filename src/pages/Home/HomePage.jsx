@@ -88,7 +88,7 @@ export default function HomePage() {
                   <li><Icon name="checkCircle" /> TRX TRAINING ZONE</li>
                   <li><Icon name="checkCircle" /> 3대1 소그룹 레슨</li>
                 </ul>
-                <Link to="/bluemotion/lesson" className="btn btn-primary btn-sm">자세히 보기</Link>
+                <Link to="/programs/group-private" className="btn btn-primary btn-sm">자세히 보기</Link>
               </div>
             </div>
             {/* 개인 레슨 */}
@@ -102,7 +102,7 @@ export default function HomePage() {
                   <li><Icon name="checkCircle" /> 레슨 전/후 비교사진 제공</li>
                   <li><Icon name="checkCircle" /> 추후 그룹레슨 전환 목표</li>
                 </ul>
-                <Link to="/bluemotion/lesson" className="btn btn-primary btn-sm">자세히 보기</Link>
+                <Link to="/programs/group-private" className="btn btn-primary btn-sm">자세히 보기</Link>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ export default function HomePage() {
                   <li><Icon name="checkCircle" /> 임산부 그룹/개인 레슨</li>
                   <li><Icon name="checkCircle" /> 빠른 회복 ∙ 건강한 출산</li>
                 </ul>
-                <Link to="/bluemotion/lesson" className="btn btn-primary btn-sm">자세히 보기</Link>
+                <Link to="/programs/maternity" className="btn btn-primary btn-sm">자세히 보기</Link>
               </div>
             </div>
             {/* 오른쪽 */}
@@ -138,7 +138,7 @@ export default function HomePage() {
                   <li><Icon name="checkCircle" /> 성장판 자극 자세교정</li>
                   <li><Icon name="checkCircle" /> 바른 학습자세 교육</li>
                 </ul>
-                <Link to="/bluemotion/lesson" className="btn btn-primary btn-sm">자세히 보기</Link>
+                <Link to="/programs/senior-kids" className="btn btn-primary btn-sm">자세히 보기</Link>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function HomePage() {
                 <li><Icon name="checkCircle" /> 약 90분간 진행</li>
                 <li><Icon name="checkCircle" /> 체형별 스트레칭 교육</li>
               </ul>
-              <Link to="/floating" className="btn btn-primary btn-sm">자세히 보기</Link>
+              <Link to="/special/team-building" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
               <img className="activity-photo" src="/images/home/teambuilding-1.webp" alt="팀빌딩 워크샵 1" />
@@ -203,7 +203,7 @@ export default function HomePage() {
                 <li><Icon name="checkCircle" /> 남녀노소 누구나 참여 가능</li>
                 <li><Icon name="checkCircle" /> 봄 ∙ 여름 ∙ 가을 시즌</li>
               </ul>
-              <Link to="/floating/activity" className="btn btn-primary btn-sm">자세히 보기</Link>
+              <Link to="/special/beach-pilates" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
           </div>
 
@@ -217,7 +217,7 @@ export default function HomePage() {
                 <li><Icon name="checkCircle" /> 방학 중 단기적 방문 레슨</li>
                 <li><Icon name="checkCircle" /> 자세 ∙ 키 성장 관련 출강</li>
               </ul>
-              <Link to="/special-maternity" className="btn btn-primary btn-sm">자세히 보기</Link>
+              <Link to="/programs/senior-kids" className="btn btn-primary btn-sm">자세히 보기</Link>
             </div>
             <div className="activity-photos">
               <img className="activity-photo" src="/images/home/school-program-1.webp" alt="학교 연계 프로그램 1" />
@@ -248,7 +248,7 @@ export default function HomePage() {
               <div className="instructor-course-body">
                 <h4 className="instructor-course-title">글로벌 필라테스</h4>
                 <p className="instructor-course-desc">결혼 이민 여성 취업 지원</p>
-                <Link to="/education/floating-expert" className="btn btn-secondary btn-sm">상세보기</Link>
+                <Link to="/education/global-pilates" className="btn btn-secondary btn-sm">상세보기</Link>
               </div>
             </div>
             <div className="instructor-course-card">
@@ -256,7 +256,7 @@ export default function HomePage() {
               <div className="instructor-course-body">
                 <h4 className="instructor-course-title">플로팅 필라테스</h4>
                 <p className="instructor-course-desc">플로팅 필라테스 지도자 과정</p>
-                <Link to="/education/marriage-pregnancy" className="btn btn-secondary btn-sm">상세보기</Link>
+                <Link to="/education/floating-pilates" className="btn btn-secondary btn-sm">상세보기</Link>
               </div>
             </div>
           </div>

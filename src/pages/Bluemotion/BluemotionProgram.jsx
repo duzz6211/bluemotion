@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function BluemotionLocation() {
+export default function BluemotionProgram() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="오시는길"
-        subtitle="블루모션트레이닝 센터 위치 안내"
+        title="프로그램"
+        subtitle="블루모션트레이닝센터 프로그램 안내"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
           { label: '블루모션트레이닝센터', to: '/bluemotion' },
-          { label: '오시는길' },
+          { label: '프로그램' },
         ]}
       />
 

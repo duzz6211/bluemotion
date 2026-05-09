@@ -1,20 +1,20 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
-export default function BluemotionLocation() {
+export default function NewsNotice() {
   const location = useLocation()
 
   return (
     <>
       <HeroSection
-        title="오시는길"
-        subtitle="블루모션트레이닝 센터 위치 안내"
+        title="공지사항"
+        subtitle="블루모션 공식 공지사항"
         size="sm"
         breadcrumb={[
           { label: '홈', to: '/' },
-          { label: '블루모션트레이닝센터', to: '/bluemotion' },
-          { label: '오시는길' },
+          { label: '공지/뉴스', to: '/news' },
+          { label: '공지사항' },
         ]}
       />
 
@@ -30,11 +30,11 @@ export default function BluemotionLocation() {
 
             <aside className="sidebar">
               <nav className="sidebar-menu">
-                <h3 className="sidebar-title">블루모션트레이닝센터</h3>
-                <Link to="/bluemotion" className={`sidebar-link${location.pathname === '/bluemotion' ? ' active' : ''}`}>시설소개</Link>
-                <Link to="/bluemotion/program" className={`sidebar-link${location.pathname === '/bluemotion/program' ? ' active' : ''}`}>프로그램</Link>
-                <Link to="/bluemotion/location" className={`sidebar-link${location.pathname === '/bluemotion/location' ? ' active' : ''}`}>오시는길</Link>
-                <Link to="/bluemotion/vision" className={`sidebar-link${location.pathname === '/bluemotion/vision' ? ' active' : ''}`}>비전</Link>
+                <h3 className="sidebar-title">공지/뉴스</h3>
+                <Link to="/news" className={`sidebar-link${location.pathname === '/news' ? ' active' : ''}`}>전체소식</Link>
+                <Link to="/news/notice" className={`sidebar-link${location.pathname === '/news/notice' ? ' active' : ''}`}>공지사항</Link>
+                <Link to="/news/sns" className={`sidebar-link${location.pathname === '/news/sns' ? ' active' : ''}`}>SNS</Link>
+                <Link to="/news/contact" className={`sidebar-link${location.pathname === '/news/contact' ? ' active' : ''}`}>문의</Link>
               </nav>
               <div className="info-box mt-3">
                 <h4 className="info-box-title">문의</h4>

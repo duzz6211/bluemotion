@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
 
@@ -26,35 +26,26 @@ export default function FmtaGreeting() {
                 <div className="placeholder-image" style={{ width: '200px', height: '250px', borderRadius: '12px', float: 'left', marginRight: '2rem', marginBottom: '1rem' }}>
                   [협회장 사진]
                 </div>
-                <h3>안녕하십니까,<br/>FMTA 협회장 홍길동입니다.</h3>
+                <h3>안녕하세요,<br/>FMTA 협회장 김하나입니다.</h3>
                 <p>
-                  FMTA(Functional Movement Training Association) 홈페이지를 방문해 주신 여러분께
-                  진심으로 감사드립니다.
+                  우리는 살아가며 수많은 사람과 만나고 또 헤어집니다. 하지만 그 짧은 만남 속에서도
+                  &lsquo;건강한 움직임&rsquo;을 되찾아준 기억은 삶을 지탱하는 큰 힘이 되곤 합니다.
                 </p>
                 <p>
-                  저희 FMTA는 &ldquo;움직임 교육의 새로운 기준&rdquo;을 만들어가기 위해 설립된 전문 교육 협회입니다.
-                  현대인들은 생활 패턴의 변화로 인해 점점 움직임의 질이 저하되고 있으며,
-                  이에 따라 올바른 움직임 교육의 필요성은 그 어느 때보다 높아지고 있습니다.
+                  저는 지난 18년간 현장에서 수만 명의 몸을 마주하며 깨달았습니다.
+                  단순한 테크닉보다 중요한 것은 한 사람의 삶을 깊이 이해하려는 마음이라는 것을요.
+                  FMTA는 바로 그 마음에서 시작되었습니다.
                 </p>
                 <p>
-                  FMTA는 이러한 시대적 요구에 부응하여, 기능해부학적 이해를 바탕으로 한 과학적이고
-                  체계적인 움직임 교육 커리큘럼을 개발하고 있습니다. 단순히 운동 동작을 가르치는 것이 아니라,
-                  인체의 구조와 기능을 깊이 이해하고, 각 개인의 상황에 맞는 안전하고 효과적인
-                  움직임을 지도할 수 있는 전문가를 양성하는 것이 저희의 목표입니다.
+                  물리치료사들의 전문적인 식견을 바탕으로, 단순한 운동을 넘어 삶의 질을 바꾸는
+                  &lsquo;기능적 움직임&rsquo;을 연구합니다. 강사를 양성하고 지역사회와 호흡하며,
+                  우리가 전달하는 움직임이 누군가에게는 새로운 시작이 될 수 있도록 진심을 다해 정진하겠습니다.
                 </p>
                 <p>
-                  특히 블루모션트레이닝 센터와의 협력을 통해 이론과 실습이 통합된 현장 중심의
-                  교육을 실현하고 있으며, 플로팅온더블루, 스페셜 임산부 프로그램 등 차별화된
-                  특화 프로그램을 개발하여 움직임 교육의 새로운 가능성을 열어가고 있습니다.
+                  여러분의 건강한 여정에 FMTA가 든든한 동반자가 되겠습니다. 감사합니다.
                 </p>
-                <p>
-                  앞으로도 FMTA는 교육의 질적 향상과 지도자의 전문성 강화를 위해 끊임없이
-                  노력하겠습니다. 움직임 교육에 관심이 있는 모든 분들과 함께 성장해 나가길
-                  희망합니다.
-                </p>
-                <p>감사합니다.</p>
                 <p style={{ textAlign: 'right', marginTop: '2rem' }}>
-                  <strong>FMTA 협회장 홍길동</strong>
+                  <strong>FMTA 협회장 김하나</strong>
                 </p>
               </div>
             </main>
@@ -64,14 +55,14 @@ export default function FmtaGreeting() {
                 <h3 className="sidebar-title">FMTA</h3>
                 <Link to="/fmta" className={`sidebar-link${location.pathname === '/fmta' ? ' active' : ''}`}>협회소개</Link>
                 <Link to="/fmta/greeting" className={`sidebar-link${location.pathname === '/fmta/greeting' ? ' active' : ''}`}>인사말</Link>
-                <Link to="/fmta/history" className={`sidebar-link${location.pathname === '/fmta/history' ? ' active' : ''}`}>연혁</Link>
-                <Link to="/fmta/info" className={`sidebar-link${location.pathname === '/fmta/info' ? ' active' : ''}`}>정보</Link>
+                <Link to="/fmta/history" className={`sidebar-link${location.pathname === '/fmta/history' ? ' active' : ''}`}>협회연혁</Link>
+                <Link to="/fmta/partners" className={`sidebar-link${location.pathname === '/fmta/partners' ? ' active' : ''}`}>제휴업체</Link>
               </nav>
               <div className="info-box mt-3">
                 <h4 className="info-box-title">문의</h4>
                 <dl>
-                  <dt><Icon name="phone" /> 전화</dt><dd>054-XXX-XXXX</dd>
-                  <dt><Icon name="mail" /> 이메일</dt><dd>info@bluemotion.co.kr</dd>
+                  <dt><Icon name="phone" /></dt><dd>054-XXX-XXXX</dd>
+                  <dt><Icon name="mail" /></dt><dd>info@bluemotion.co.kr</dd>
                 </dl>
               </div>
             </aside>
