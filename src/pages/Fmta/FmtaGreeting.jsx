@@ -1,10 +1,8 @@
-﻿import { Link, useLocation } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
 import HeroSection from '../../components/HeroSection/HeroSection'
+import PageSidebar from '../../components/Sidebar/PageSidebar'
 
 export default function FmtaGreeting() {
-  const location = useLocation()
-
   return (
     <>
       <HeroSection
@@ -23,9 +21,6 @@ export default function FmtaGreeting() {
           <div className="content-with-sidebar">
             <main className="main-content">
               <div className="greeting-section">
-                <div className="placeholder-image" style={{ width: '200px', height: '250px', borderRadius: '12px', float: 'left', marginRight: '2rem', marginBottom: '1rem' }}>
-                  [협회장 사진]
-                </div>
                 <h3>안녕하세요,<br/>FMTA 협회장 김하나입니다.</h3>
                 <p>
                   우리는 살아가며 수많은 사람과 만나고 또 헤어집니다. 하지만 그 짧은 만남 속에서도
@@ -48,24 +43,29 @@ export default function FmtaGreeting() {
                   <strong>FMTA 협회장 김하나</strong>
                 </p>
               </div>
+
+              <div className="info-box mt-5">
+                <h4 className="info-box-title"><Icon name="user" /> 약력</h4>
+                <ul>
+                  <li>기능적움직임트레이닝협회(FMTA) 협회장</li>
+                  <li>블루모션트레이닝 대표원장</li>
+                  <li>물리치료사</li>
+                  <li>2019년 힐라테스 센터 개원, 2023년 블루모션트레이닝으로 확장 이전</li>
+                  <li>FMTA 기능성필라테스 지도자 과정 직강</li>
+                  <li>맘스바디케어 임산부 운동처방사(PEC) 39기 수료</li>
+                  <li>울진군보건소 · 울진군가족센터 · 원덕중고등학교 · 한국수력원자력 한울본부 연계 프로그램 진행</li>
+                </ul>
+              </div>
+
+              <div className="info-box mt-4" style={{ textAlign: 'center' }}>
+                <p style={{ fontSize: '1.125rem', fontWeight: 500, lineHeight: 1.7, margin: 0 }}>
+                  &ldquo;당신이 빛날 수 있는 곳에서 함께 하세요.<br />
+                  그 빛은 또 다른 누군가를 이끌 수 있는 빛이 될 거예요.&rdquo;
+                </p>
+              </div>
             </main>
 
-            <aside className="sidebar">
-              <nav className="sidebar-menu">
-                <h3 className="sidebar-title">FMTA</h3>
-                <Link to="/fmta" className={`sidebar-link${location.pathname === '/fmta' ? ' active' : ''}`}>협회소개</Link>
-                <Link to="/fmta/greeting" className={`sidebar-link${location.pathname === '/fmta/greeting' ? ' active' : ''}`}>인사말</Link>
-                <Link to="/fmta/history" className={`sidebar-link${location.pathname === '/fmta/history' ? ' active' : ''}`}>협회연혁</Link>
-                <Link to="/fmta/partners" className={`sidebar-link${location.pathname === '/fmta/partners' ? ' active' : ''}`}>제휴업체</Link>
-              </nav>
-              <div className="info-box mt-3">
-                <h4 className="info-box-title">문의</h4>
-                <dl>
-                  <dt><Icon name="phone" /></dt><dd>054-XXX-XXXX</dd>
-                  <dt><Icon name="mail" /></dt><dd>info@bluemotion.co.kr</dd>
-                </dl>
-              </div>
-            </aside>
+            <PageSidebar menu="fmta" />
           </div>
         </div>
       </section>

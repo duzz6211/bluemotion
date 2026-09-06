@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { SITE } from '../../data/site'
 
 export default function Footer() {
   return (
@@ -13,10 +14,12 @@ export default function Footer() {
               움직임 교육과 웰니스의 전문 브랜드
             </p>
             <p className="mt-3">
-              경상북도 울진군 (상세주소)<br />
-              Tel. 054-XXX-XXXX<br />
-              Email. info@bluemotion.co.kr
+              {SITE.roadAddress}<br />
+              Tel. <a href={'tel:' + SITE.phone}>{SITE.phone}</a><br />
+              Email. <a href={'mailto:' + SITE.email}>{SITE.email}</a><br />
+              {SITE.hours}
             </p>
+            <p className="mt-3">{SITE.registration}</p>
           </div>
 
           {/* FMTA Links */}

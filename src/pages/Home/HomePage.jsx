@@ -1,7 +1,24 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Icon from '../../components/Icon/Icon'
+import { SITE } from '../../data/site'
 
 export default function HomePage() {
+  const [latestNews, setLatestNews] = useState([])
+
+  useEffect(() => {
+    let cancelled = false
+    fetch('/news.json')
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data) => {
+        if (!cancelled) setLatestNews(data.slice(0, 3))
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
   return (
     <>
       {/* Hero Section */}
@@ -310,19 +327,19 @@ export default function HomePage() {
             <div className="center-info-details">
               <div className="info-item">
                 <span className="info-icon"><Icon name="mapPin" /></span>
-                <div className="info-text"><strong>주소</strong><p>경상북도 울진군 울진읍 (상세주소)</p></div>
+                <div className="info-text"><strong>주소</strong><p>{SITE.roadAddress}<br/>{SITE.landmark}</p></div>
               </div>
               <div className="info-item">
                 <span className="info-icon"><Icon name="phone" /></span>
-                <div className="info-text"><strong>전화</strong><p>054-XXX-XXXX</p></div>
+                <div className="info-text"><strong>전화</strong><p><a href={'tel:' + SITE.phone}>{SITE.phone}</a></p></div>
               </div>
               <div className="info-item">
                 <span className="info-icon"><Icon name="clock" /></span>
-                <div className="info-text"><strong>운영시간</strong><p>평일 09:00 - 21:00<br/>토요일 09:00 - 18:00<br/>일요일/공휴일 휴무</p></div>
+                <div className="info-text"><strong>운영</strong><p>{SITE.hours}<br/>{SITE.hoursNote}</p></div>
               </div>
               <div className="info-item">
                 <span className="info-icon"><Icon name="car" /></span>
-                <div className="info-text"><strong>주차</strong><p>건물 내 주차장 이용 가능</p></div>
+                <div className="info-text"><strong>규모 · 주차</strong><p>60평 이상 1층 단독건물<br/>건물 앞 자체 주차 공간 이용</p></div>
               </div>
               <div className="center-info-buttons">
                 <Link to="/bluemotion/location" className="btn btn-primary">오시는 길</Link>
@@ -341,33 +358,20 @@ export default function HomePage() {
             <p className="section-subtitle">블루모션의 새로운 소식을 확인하세요</p>
           </div>
           <div className="grid-3">
-            <article className="card">
-              <img className="card-image" src="/images/home/news-1.webp" alt="지도자 과정 모집" />
-              <div className="card-body">
-                <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.15</span>
-                <h4 className="card-title">2024년 상반기 지도자 과정 모집 안내</h4>
-                <p className="card-text">FMTA 필라테스 지도자 과정 상반기 모집을 시작합니다...</p>
-                <Link to="/news" className="btn btn-secondary btn-sm">자세히 보기</Link>
-              </div>
-            </article>
-            <article className="card">
-              <img className="card-image" src="/images/home/news-2.webp" alt="플로팅온더블루 시즌 프로그램" />
-              <div className="card-body">
-                <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.10</span>
-                <h4 className="card-title">플로팅온더블루 시즌 프로그램 오픈</h4>
-                <p className="card-text">봄 시즌을 맞아 새로운 수중 프로그램을 선보입니다...</p>
-                <Link to="/news" className="btn btn-secondary btn-sm">자세히 보기</Link>
-              </div>
-            </article>
-            <article className="card">
-              <img className="card-image" src="/images/home/news-3.webp" alt="울진군 건강증진센터 협약" />
-              <div className="card-body">
-                <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>2024.01.05</span>
-                <h4 className="card-title">울진군 건강증진센터 협약 체결</h4>
-                <p className="card-text">지역사회 건강 증진을 위한 업무협약을 체결했습니다...</p>
-                <Link to="/news" className="btn btn-secondary btn-sm">자세히 보기</Link>
-              </div>
-            </article>
+            {latestNews.map((item) => (
+              <article key={item.id} className="card">
+                <div className="card-body">
+                  <span className="text-muted" style={{ fontSize: 'var(--font-size-sm)' }}>
+                    {item.date} · {item.category}
+                  </span>
+                  <h4 className="card-title">{item.title}</h4>
+                  <p className="card-text">{item.summary}</p>
+                  <a href={item.link} target="_blank" rel="noreferrer noopener" className="btn btn-secondary btn-sm">
+                    자세히 보기
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
           <div className="text-center mt-4">
             <Link to="/news" className="btn btn-secondary">전체 소식 보기</Link>
