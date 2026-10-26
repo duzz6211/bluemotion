@@ -1,0 +1,54 @@
+[
+  {
+    "id": "small-group",
+    "tag": "GROUP 3:1",
+    "title": "소그룹 레슨",
+    "image": "group-lesson.webp",
+    "target": "일반 회원",
+    "size": "3:1 소그룹",
+    "time": "50분",
+    "points": ["리포머·체어·바렐·TRX 활용", "소규모 밀착 케어", "개인별 움직임에 맞춘 지도"]
+  },
+  {
+    "id": "private",
+    "tag": "PRIVATE 1:1",
+    "title": "개인 레슨",
+    "image": "private-lesson.webp",
+    "target": "일반 회원",
+    "size": "1:1 맞춤",
+    "time": "50분",
+    "points": ["체형 분석과 움직임 테스트 후 맞춤 케어", "목적과 컨디션에 맞춘 프로그램 구성"]
+  },
+  {
+    "id": "prenatal",
+    "tag": "SPECIAL",
+    "title": "스페셜 임산부",
+    "image": "maternity.webp",
+    "target": "임산부 (그룹 14주부터 / 개인 12주부터)",
+    "size": "그룹 3:1 / 개인 1:1",
+    "time": "50분",
+    "points": ["임산부운동처방사 전문 강사 지도", "주수에 맞춘 안전 케어"]
+  },
+  {
+    "id": "kids",
+    "tag": "KIDS",
+    "title": "키즈·성장",
+    "image": "kids-growth.webp",
+    "target": "초·중·고등학생",
+    "size": "그룹 / 개인 (정원 [고객 확인 필요])",
+    "time": "50분",
+    "points": ["성장기 스트레칭", "바른 자세 교정"],
+    "todo": "[고객 확인 필요] 메뉴명의 '성장' 표현, 학년별 반 구성"
+  },
+  {
+    "id": "senior",
+    "tag": "SENIOR",
+    "title": "시니어·재활",
+    "image": "senior.webp",
+    "target": "통증 케어가 필요한 분 / 실버",
+    "size": "개인 맞춤",
+    "time": "50분",
+    "points": ["통증 케어 운동", "개인 상태에 맞춘 맞춤 지도"],
+    "todo": "[고객 확인 필요] 메뉴명 '재활' (의료 효과 표현 해당 가능)"
+  }
+]

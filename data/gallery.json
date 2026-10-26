@@ -1,0 +1,29 @@
+{
+  "photos": {
+    "floating": [
+      { "src": "floating-1.webp", "alt": "플로팅 온 더 블루 고래 플로팅 매트 수중 운동" },
+      { "src": "floating-2.webp", "alt": "플로팅 매트 위에서 운동하는 참가자들" },
+      { "src": "floating-3.webp", "alt": "플로팅 온 더 블루 현장 사진" }
+    ],
+    "beach": [
+      { "src": "beach-pilates-1.webp", "alt": "해변에서 진행하는 비치 필라테스" },
+      { "src": "beach-pilates-2.webp", "alt": "솔밭에서 진행하는 비치 필라테스" },
+      { "src": "beach-pilates-3.webp", "alt": "비치 필라테스 현장 사진" }
+    ],
+    "group": [
+      { "src": "teambuilding-1.webp", "alt": "기업·기관 팀빌딩 프로그램" },
+      { "src": "teambuilding-2.webp", "alt": "단체 팀빌딩 프로그램 현장" },
+      { "src": "school-program-1.webp", "alt": "학교 단체 프로그램" },
+      { "src": "school-program-2.webp", "alt": "학교 단체 프로그램 현장" }
+    ],
+    "facility": [
+      { "src": "center.webp", "alt": "블루모션트레이닝 센터 내부" },
+      { "src": "facility-1.webp", "alt": "센터 기구 공간" },
+      { "src": "facility-2.webp", "alt": "센터 외관" }
+    ]
+  },
+  "videos": {
+    "floating": [{ "id": "", "title": "플로팅 온 더 블루 소개 영상" }],
+    "beach": [{ "id": "", "title": "비치 필라테스 소개 영상" }]
+  }
+}

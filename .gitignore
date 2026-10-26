@@ -1,0 +1,11 @@
+node_modules/
+dist/
+out/
+.next/
+.DS_Store
+Thumbs.db
+.env
+*.local
+# 원본 사진은 용량이 커서 저장소에 올리지 않음 (폴더만 유지)
+public/assets/images/원본/*
+!public/assets/images/원본/.gitkeep
