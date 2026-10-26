@@ -38,9 +38,9 @@ export default function Page() {
         <div className="container">
           <Head eyebrow="PHILOSOPHY" title="교육 철학" />
           <div className="grid grid-3">
-            <Reveal className="card"><h3>물리치료사 원장 직강</h3><p>물리치료사 출신 원장이 직접 가르칩니다.</p></Reveal>
-            <Reveal className="card"><h3>이론과 실기의 연결</h3><p>배운 이론을 실기에서 바로 확인하는 교육 과정입니다.</p></Reveal>
-            <Reveal className="card"><h3>이해·분석·연구·연결</h3><p>움직임을 이해하고 분석하고 연구하고 연결하는 훈련을 합니다.</p></Reveal>
+            <Reveal className="card no-border"><h3>물리치료사 원장 직강</h3><p>물리치료사 출신 원장이 직접 가르칩니다.</p></Reveal>
+            <Reveal className="card no-border"><h3>이론과 실기의 연결</h3><p>배운 이론을 실기에서 바로 확인하는 교육 과정입니다.</p></Reveal>
+            <Reveal className="card no-border"><h3>이해·분석·연구·연결</h3><p>움직임을 이해하고 분석하고 연구하고 연결하는 훈련을 합니다.</p></Reveal>
           </div>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function Page() {
       <section className="section alt" id="license-info">
         <div className="container">
           <Head eyebrow="LICENSE" title="민간자격 안내" />
-          <div className="table-wrap">
+          <div className="table-wrap rounded">
             <table className="info">
               <tbody>
                 <tr><th>자격 구분</th><td>{SITE.license}</td></tr>

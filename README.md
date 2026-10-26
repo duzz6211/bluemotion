@@ -65,8 +65,6 @@ WebP, 소문자·영문·하이픈, 가로 1600px 이하, 300KB 내외 권장. �
 | `director.webp` | 대표 원장 | 제공 필요 |
 | `group-lesson` / `private-lesson` / `maternity` / `kids-growth` / `senior` `.webp` | 프로그램 카드 (16:9 크롭) | senior 제공 필요 |
 | `floating-1~3.webp` | 플로팅 갤러리 | floating-3 제공 필요 |
-| `beach-pilates-1~3.webp` | 비치 필라테스 갤러리 | beach-pilates-3 제공 필요 |
-| `teambuilding-1~2`, `school-program-1~2` `.webp` | 팀빌딩 갤러리 | 있음 |
 | `case-1~3.webp` | 출강 사례 카드 | 제공 필요 |
 | `course-pilates.webp` / `course-floating.webp` | 자격 과정 카드 | 있음 |
 

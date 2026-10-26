@@ -98,7 +98,7 @@ function Footer() {
           <h3 className="lp-sub">상담·출강 문의</h3>
           <p>개인 레슨, 관공서·학교·기업 출강, 지도자 과정까지 편하게 문의해 주세요.<br />100% 사전 예약제 · 평일 09:00~22:00</p>
           <div className="btn-row">
-            <a className="btn btn-light btn-ico" href={SITE.phoneHref} aria-label={`전화 ${SITE.phone}`}>{Icon.phone}{SITE.phone}</a>
+            <a className="btn btn-light btn-ico" href={SITE.phoneHref} aria-label={`전화 ${SITE.phone}`}>{Icon.phone}전화하기</a>
             <a className="btn btn-outline btn-ico" href={SITE.smsHref} aria-label="문자 보내기">{Icon.sms}문자</a>
             <a className="btn btn-outline btn-ico" href={SITE.kakao} target="_blank" rel="noopener noreferrer" aria-label="카카오톡 채널">{Icon.kakao}카카오톡</a>
             <a className="btn btn-outline btn-ico" href={`mailto:${SITE.email}`} aria-label="이메일 보내기">{Icon.mail}이메일</a>
@@ -120,7 +120,7 @@ function Footer() {
             <div>
               <h4>연락처</h4>
               <ul>
-                <li><a href={SITE.phoneHref}>{SITE.phone}</a></li>
+                <li><a className="footer-ico" href={SITE.phoneHref}>{Icon.phone} {SITE.phone}</a></li>
                 <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
                 <li><Social className="social" /></li>
               </ul>

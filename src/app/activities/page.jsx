@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout'
-import { Img, Reveal, Head, PageHero, Gallery, Videos, Cases } from '../../components/ui'
+import { Img, Reveal, Head, PageHero, Gallery, Cases } from '../../components/ui'
 import { Icon } from '../../components/icons'
 import { img, SITE } from '../../site'
 import { pageMeta } from '../../seo'
@@ -18,7 +18,7 @@ export default function Page() {
       <section className="section" id="beach">
         <div className="container">
           <div className="split">
-            <Reveal className="media"><Img src={img('beach-pilates-1.webp')} alt="해변에서 진행하는 비치 필라테스" /></Reveal>
+            <Gallery kind="beach" />
             <Reveal>
               <Head eyebrow="BEACH PILATES" title="비치 필라테스" />
               <p className="quote">“매트만 있으면 언제 어디서든 가능!<br />파도 소리와 함께하는 해변 필라테스”</p>
@@ -30,8 +30,6 @@ export default function Page() {
               </ul>
             </Reveal>
           </div>
-          <Gallery kind="beach" />
-          <Videos kind="beach" />
         </div>
       </section>
 
@@ -39,19 +37,19 @@ export default function Page() {
         <div className="container">
           <Head eyebrow="TEAM BUILDING" title="팀빌딩·워크숍·출강" text="90분간의 팀워크, 단합 및 건강한 추억 쌓기 프로그램" />
           <div className="grid grid-4">
-            <Reveal className="card"><span className="tag">대상</span><h3>기업·기관·학교</h3></Reveal>
-            <Reveal className="card"><span className="tag">장소</span><h3>센터 방문 또는 출장</h3></Reveal>
-            <Reveal className="card"><span className="tag">인원</span><h3>10명 내외</h3></Reveal>
-            <Reveal className="card"><span className="tag">시간</span><h3>90분</h3></Reveal>
+            <Reveal className="card no-border"><span className="tag">대상</span><h3>기업·기관·학교</h3></Reveal>
+            <Reveal className="card no-border"><span className="tag">장소</span><h3>센터 방문 또는 출장</h3></Reveal>
+            <Reveal className="card no-border"><span className="tag">인원</span><h3>10명 내외</h3></Reveal>
+            <Reveal className="card no-border"><span className="tag">시간</span><h3>90분</h3></Reveal>
           </div>
+          <div style={{ maxWidth: 760, margin: '32px auto 0' }}><Gallery kind="group" /></div>
           <h3 style={{ margin: '40px 0 16px' }}>진행 흐름</h3>
-          <ol className="steps">
+          <ol className="steps no-border">
             <li><div><b>문의</b><span>전화·문자·이메일·카카오톡으로 문의해 주세요.</span></div></li>
             <li><div><b>일정·인원 협의</b><span>기관의 일정과 대상에 맞춰 협의합니다.</span></div></li>
             <li><div><b>진행</b><span>협의된 일정에 맞춰 프로그램을 진행합니다.</span></div></li>
           </ol>
-          <div className="btn-row"><a className="btn btn-primary btn-ico btn-call btn-wide" href={SITE.phoneHref} aria-label="전화하기">{Icon.phone}전화하기</a><a className="btn btn-line btn-ico btn-wide" href={`mailto:${SITE.email}`} aria-label="메일 보내기">{Icon.mail}메일 보내기</a></div>
-          <Gallery kind="group" />
+          <div className="btn-row" style={{ justifyContent: 'center' }}><a className="btn btn-primary btn-ico btn-call btn-wide" href={SITE.phoneHref} aria-label="전화하기">{Icon.phone}전화하기</a><a className="btn btn-line no-border btn-ico btn-wide" href={`mailto:${SITE.email}`} aria-label="메일 보내기">{Icon.mail}메일 보내기</a></div>
         </div>
       </section>
 
@@ -63,9 +61,9 @@ export default function Page() {
       </section>
 
       <section className="section alt" id="news">
-        <div className="container">
+        <div className="container centered">
           <Head eyebrow="NEWS" title="최신 활동 소식" text="최신 활동은 블로그와 인스타그램에서 확인하세요." />
-          <div className="btn-row">
+          <div className="btn-row" style={{ justifyContent: 'center' }}>
             <a className="btn btn-primary" href={SITE.blog} target="_blank" rel="noopener noreferrer">네이버 블로그</a>
             <a className="btn btn-line" href={SITE.instagram} target="_blank" rel="noopener noreferrer">인스타그램</a>
           </div>

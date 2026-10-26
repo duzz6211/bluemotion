@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout'
-import { Img, Reveal, Head, PageHero, Todo } from '../../components/ui'
+import { Icon } from '../../components/icons'
+import { Img, Reveal, Head, PageHero, Todo, Gallery } from '../../components/ui'
 import { img, SITE, MAP } from '../../site'
 import { pageMeta } from '../../seo'
 
@@ -37,14 +38,14 @@ export default function Page() {
       </section>
 
       <section className="section alt" id="facility">
-        <div className="container">
-          <Head eyebrow="FACILITY" title="시설·기구" text="60평 단독 건물, 소규모 밀착 레슨에 맞춘 공간입니다." />
-          <div className="grid grid-3">
-            {gear.map((g) => <Reveal className="card" key={g}><h3>{g}</h3></Reveal>)}
-            <Reveal className="card"><span className="tag">PARKING</span><h3>무료 주차</h3><p>건물 앞 대형 주차 공간</p></Reveal>
-          </div>
-          <div className="gallery" style={{ marginTop: 24 }}>
-            {['facility-1.webp', 'facility-2.webp', 'center.webp'].map((f) => <div className="media" key={f}><Img src={img(f)} alt="센터 시설" /></div>)}
+        <div className="container split">
+          <Gallery kind="facility" />
+          <div>
+            <Head eyebrow="FACILITY" title="시설·기구" text="60평 단독 건물, 소규모 밀착 레슨에 맞춘 공간입니다." />
+            <div className="grid grid-2">
+              {gear.map((g) => <Reveal className="card" key={g}><h3>{g}</h3></Reveal>)}
+              <Reveal className="card"><h3>무료 주차</h3></Reveal>
+            </div>
           </div>
         </div>
       </section>
@@ -52,7 +53,7 @@ export default function Page() {
       <section className="section" id="hours">
         <div className="container">
           <Head eyebrow="INFORMATION" title="운영 안내" />
-          <div className="table-wrap">
+          <div className="table-wrap rounded">
             <table className="info">
               <tbody>
                 <tr><th>운영 시간</th><td>평일 09:00~22:00</td></tr>
@@ -71,14 +72,14 @@ export default function Page() {
           <div className="split">
             <Reveal className="map"><iframe src={MAP.embed} title="블루모션트레이닝센터 위치 지도" loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></Reveal>
             <Reveal>
-              <ul className="checks">
+              <ul className="checks star">
                 <li>경상북도 울진군 북면 장터길 51-4</li>
                 <li>북면 119안전센터 옆</li>
                 <li>건물 앞 대형 주차 공간 무료</li>
               </ul>
-              <div className="btn-row" style={{ marginTop: 20 }}>
-                <a className="btn btn-primary" href={MAP.naver} target="_blank" rel="noopener noreferrer">네이버 지도 길찾기</a>
-                <a className="btn btn-line" href={MAP.kakao} target="_blank" rel="noopener noreferrer">카카오맵 길찾기</a>
+              <div className="btn-row map-btns" style={{ marginTop: 20 }}>
+                <a className="btn btn-line btn-ico" href={MAP.naver} target="_blank" rel="noopener noreferrer">{Icon.naverMap}네이버지도 열기</a>
+                <a className="btn btn-line btn-ico" href={MAP.kakao} target="_blank" rel="noopener noreferrer">{Icon.kakaoMap}카카오 지도 열기</a>
               </div>
             </Reveal>
           </div>

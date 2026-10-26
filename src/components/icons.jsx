@@ -4,4 +4,6 @@ export const Icon = {
   sms: <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z" /></svg>,
   mail: <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>,
   kakao: <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.4 2 10.7c0 2.8 1.8 5.2 4.6 6.6l-1 3.7 4.3-2.8c.7.1 1.4.2 2.1.2 5.5 0 10-3.4 10-7.7S17.5 3 12 3z" /></svg>,
+  naverMap: <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#03C75A" /><path d="M13.6 12.5 10.2 7.5H7.5v9h2.9v-5l3.4 5h2.7v-9h-2.9z" fill="#fff" /></svg>,
+  kakaoMap: <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#FEE500" /><path d="M12 4.5a5.5 5.5 0 0 0-5.5 5.5c0 3.9 5.5 9.5 5.5 9.5s5.5-5.6 5.5-9.5A5.5 5.5 0 0 0 12 4.5zm0 7.4a1.9 1.9 0 1 1 0-3.8 1.9 1.9 0 0 1 0 3.8z" fill="#3C1E1E" /></svg>,
 }

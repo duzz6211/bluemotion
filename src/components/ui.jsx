@@ -108,13 +108,37 @@ export function ProgramCards() {
 }
 
 /* ---------- 갤러리 · 영상 (data/gallery.json) ---------- */
-export function Gallery({ kind }) {
-  const data = gallery
+/* 사진 한 칸을 차지하고 화살표로 넘기는 슬라이더 */
+export function Slider({ items }) {
+  const track = useRef(null)
+  const [i, setI] = useState(0)
+  const n = items.length
+  if (!n) return null
+  const go = (to) => {
+    const el = track.current
+    if (el) el.scrollTo({ left: to * el.clientWidth, behavior: reducedMotion() ? 'auto' : 'smooth' })
+  }
+  const onScroll = (e) => {
+    const el = e.currentTarget
+    setI(Math.round(el.scrollLeft / el.clientWidth))
+  }
   return (
-    <div className="gallery">
-      {(data.photos[kind] || []).map((g) => <div className="media" key={g.src}><Img src={img(g.src)} alt={g.alt} /></div>)}
-    </div>
+    <Reveal className="media slider">
+      <div className="slider-track" ref={track} onScroll={onScroll}>
+        {items.map((g) => <div className="slide" key={g.src}><Img src={img(g.src)} alt={g.alt} /></div>)}
+      </div>
+      {n > 1 && (
+        <>
+          <button type="button" className="slider-btn prev" aria-label="이전 사진" onClick={() => go((i - 1 + n) % n)}>‹</button>
+          <button type="button" className="slider-btn next" aria-label="다음 사진" onClick={() => go((i + 1) % n)}>›</button>
+          <div className="slider-dots" aria-hidden="true">{items.map((g, k) => <span key={g.src} className={k === i ? 'on' : ''} />)}</div>
+        </>
+      )}
+    </Reveal>
   )
+}
+export function Gallery({ kind }) {
+  return <Slider items={gallery.photos[kind] || []} />
 }
 export function Videos({ kind }) {
   const data = gallery

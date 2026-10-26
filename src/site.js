@@ -19,7 +19,7 @@ export const NAV = [
   { label: 'FMTA협회', href: '/association', children: [['협회 소개', '#intro'], ['설립 이념', '#philosophy'], ['자격 정보', '#license']] },
   { label: '블루모션트레이닝센터', href: '/center', children: [['센터·원장 소개', '#about'], ['시설·기구', '#facility'], ['운영 안내', '#hours'], ['오시는 길', '#location']] },
   { label: '프로그램', href: '/programs', children: [['소그룹 레슨', '#small-group'], ['개인 레슨', '#private'], ['스페셜 임산부', '#prenatal'], ['키즈·성장', '#kids'], ['시니어·재활', '#senior']] },
-  { label: '플로팅온더블루', href: '/floating', children: [['프로그램 소개', '#intro'], ['진행 안내', '#info'], ['현장 사진·영상', '#gallery']] },
+  { label: '플로팅온더블루', href: '/floating', children: [['프로그램 소개', '#intro'], ['진행 안내', '#info'], ['현장 영상', '#gallery']] },
   { label: '특별활동', href: '/activities', children: [['비치 필라테스', '#beach'], ['팀빌딩·워크숍·출강', '#teambuilding'], ['출강 이력·사례', '#cases'], ['최신 활동 소식', '#news']] },
   { label: '교육과정', href: '/education', children: [['자격 과정', '#courses'], ['교육 철학', '#philosophy'], ['교육생 혜택', '#benefits'], ['민간자격 안내', '#license-info']] },
 ]

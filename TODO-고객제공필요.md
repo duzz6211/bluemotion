@@ -4,8 +4,8 @@
 - [ ] 카카오톡 채널 주소 → `src/site.js`의 `SITE.kakao` (현재 `_XXXXXX` 플레이스홀더)
 - [ ] 네이버 서치어드바이저 / 구글 서치콘솔 인증 코드 → `src/app/layout.jsx`
 - [ ] 대표 원장 이름·직함·약력·인사말, 사진 `director.webp`
-- [ ] 사진: `senior`, `floating-3`, `beach-pilates-3`, `facility-1~2`, `case-1~3`, `hero-sea`(울진 바다 히어로)
-- [ ] 유튜브 영상 ID (플로팅, 비치 필라테스) → `data/gallery.json`
+- [ ] 사진: `senior`, `floating-3`, `facility-1~2`, `case-1~3`, `hero-sea`(울진 바다 히어로)
+- [ ] 유튜브 영상 ID (플로팅) → `data/gallery.json`
 - [ ] 출강 이력·사례: 기관명, 진행 내용, 사진 → `data/cases.json` (현재 전부 플레이스홀더)
 - [ ] 민간자격: 정식 자격명, 자격관리기관, 교육 비용, 환불 안내, 교육 기간·일정
 - [ ] 공유 썸네일 `og-image.jpg` 정식본 (현재 임시본)

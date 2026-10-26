@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout'
 import { Img, Reveal, Head, PageHero, Todo } from '../../components/ui'
-import { img, SITE } from '../../site'
+import { img } from '../../site'
 import { pageMeta } from '../../seo'
 
 export const metadata = pageMeta({
@@ -49,7 +49,6 @@ export default function Page() {
               </tbody>
             </table>
           </div>
-          <p className="muted-note" style={{ marginTop: 16 }}>{SITE.license}. 국가 공인 자격이 아닌 등록 민간자격입니다.</p>
         </div>
       </section>
     </Layout>

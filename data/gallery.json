@@ -7,8 +7,7 @@
     ],
     "beach": [
       { "src": "beach-pilates-1.webp", "alt": "해변에서 진행하는 비치 필라테스" },
-      { "src": "beach-pilates-2.webp", "alt": "솔밭에서 진행하는 비치 필라테스" },
-      { "src": "beach-pilates-3.webp", "alt": "비치 필라테스 현장 사진" }
+      { "src": "beach-pilates-2.webp", "alt": "솔밭에서 진행하는 비치 필라테스" }
     ],
     "group": [
       { "src": "teambuilding-1.webp", "alt": "기업·기관 팀빌딩 프로그램" },
@@ -23,7 +22,6 @@
     ]
   },
   "videos": {
-    "floating": [{ "id": "", "title": "플로팅 온 더 블루 소개 영상" }],
-    "beach": [{ "id": "", "title": "비치 필라테스 소개 영상" }]
+    "floating": [{ "id": "", "title": "플로팅 온 더 블루 소개 영상" }]
   }
 }
