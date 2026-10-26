@@ -39,7 +39,7 @@ export default function Page() {
       <section className="section" id="license">
         <div className="container">
           <Head eyebrow="LICENSE" title="자격 정보" />
-          <div className="table-wrap">
+          <div className="table-wrap rounded">
             <table className="info">
               <tbody>
                 <tr><th>구분</th><td>등록 민간자격</td></tr>
